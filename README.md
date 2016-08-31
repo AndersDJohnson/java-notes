@@ -27,7 +27,10 @@ String fullStackTrace = org.apache.commons.lang.exception.ExceptionUtils.getFull
 
 ## Reader to String
 ```java
-org.apache.commons.io.IOUtils.toString(new ReaderInputStream(reader), "UTF-8");
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.input.ReaderInputStream;
+
+IOUtils.toString(new ReaderInputStream(reader), "UTF-8");
 ```
 
 ## Enum find value
